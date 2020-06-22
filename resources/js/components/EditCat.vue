@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="text-center">Edit Book</h3>
+        <h3 class="text-center">Edit Cat</h3>
         <div class="row">
             <div class="col-md-6">
                 <form @submit.prevent="updateCat">
