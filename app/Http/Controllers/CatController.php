@@ -13,40 +13,40 @@ class CatController extends Controller
         return array_reverse($cats);
     }
 
-    // add book
+    // add cat
     public function add(Request $request)
     {
-        $book = new Cat([
+        $cat = new Cat([
             'image_url' => $request->input('image_url')
             'breed' => $request->input('breed')
             'age' => $request->input('age')
             'color' => $request->input('color')
             'active' => $request->input('active')
         ]);
-        $book->save();
+        $cat->save();
         return response()->json('This Cat was successfully added');
     }
 
-    // edit book
+    // edit cat
     public function edit($id)
     {
         $cat = Cat::find($id);
         return response()->json($cat);
     }
 
-    // update book
+    // update cat
     public function update($id, Request $request)
     {
-        $book = Cat::find($id);
+        $cat = Cat::find($id);
         $book->update($request->all());
         return response()->json('The Cat was successfully updated');
     }
 
-    // delete book
+    // delete cat
     public function delete($id)
     {
-        $book = Cat::find($id);
-        $book->delete();
+        $cat = Cat::find($id);
+        $cat->delete();
         return response()->json('This was was successfully removed!');
     }
 }
