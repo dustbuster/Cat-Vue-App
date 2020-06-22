@@ -1,13 +1,3 @@
-<!-- 
-<td>{{ cat.id }}</td>
-<td>{{ cat.image_url }}</td>
-<td>{{ cat.breed }}</td>
-<td>{{ cat.age }}</td>
-<td>{{ cat.color }}</td>
-<td>{{ cat.created_at }}</td>
-<td>{{ cat.updated_at }}</td> 
--->
-
 <template>
     <div>
         <h3 class="text-center">Add Cat</h3>
@@ -56,6 +46,6 @@
                     .catch(error => console.log(error))
                     .finally(() => this.loading = false)
             }
-        }
+        },
     }
 </script>

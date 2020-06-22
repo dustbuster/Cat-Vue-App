@@ -46,7 +46,7 @@
         },
         created() {
             this.axios
-                .get('https://cats.localdev/api/Cats')
+                .get('https://cats.localdev/api/cats')
                 .then(response => {
                     this.Cats = response.data;
                 });

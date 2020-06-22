@@ -1969,16 +1969,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2062,7 +2052,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    this.axios.get('https://cats.localdev/api/Cats').then(function (response) {
+    this.axios.get('https://cats.localdev/api/cats').then(function (response) {
       _this.Cats = response.data;
     });
   },

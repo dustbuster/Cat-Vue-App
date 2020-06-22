@@ -17,11 +17,11 @@ class CatController extends Controller
     public function add(Request $request)
     {
         $cat = new Cat([
-            'image_url' => $request->input('image_url')
-            'breed' => $request->input('breed')
-            'age' => $request->input('age')
-            'color' => $request->input('color')
-            'active' => $request->input('active')
+            'image_url' => $request->input('image_url'),
+            'breed' => $request->input('breed'),
+            'age' => $request->input('age'),
+            'color' => $request->input('color'),
+            'active' => $request->input('active'),
         ]);
         $cat->save();
         return response()->json('This Cat was successfully added');
