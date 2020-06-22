@@ -54,7 +54,7 @@
         methods: {
             deleteCat(id) {
                 this.axios
-                    .delete(`http://localhost:8000/api/cat/delete/${id}`)
+                    .delete(`https://cats.localdev/api/cat/delete/${id}`)
                     .then(response => {
                         let i = this.Cats.map(item => item.id).indexOf(id); // find index of your object
                         this.Cats.splice(i, 1)
